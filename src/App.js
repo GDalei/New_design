@@ -77,6 +77,7 @@ function App() {
       })
     } catch (error) {
       console.log(error)
+      setCartItems([...cartItems, { ...item, quantity: 1 }])
     }
 
   }
